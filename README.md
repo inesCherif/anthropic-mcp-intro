@@ -71,27 +71,39 @@ python main.py
 
 ## Usage
 
+### Streamlit Interface
+
+Run the application with Streamlit:
+
+```bash
+streamlit run main.py
+```
+
+If you use `uv`, run:
+
+```bash
+uv run streamlit run main.py
+```
+
 ### Basic Interaction
 
-Simply type your message and press Enter to chat with the model.
+Type your message and press Send to chat with the model.
 
 ### Document Retrieval
 
-Use the @ symbol followed by a document ID to include document content in your query:
+Mention documents with the @ symbol followed by a document ID:
 
 ```
-> Tell me about @deposition.md
+Tell me about @deposition.md
 ```
 
 ### Commands
 
-Use the / prefix to execute commands defined in the MCP server:
+Use the `/` prefix to execute prompts defined in the MCP server:
 
 ```
-> /summarize deposition.md
+/format plan.md
 ```
-
-Commands will auto-complete when you press Tab.
 
 ## Development
 
